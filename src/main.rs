@@ -263,9 +263,6 @@ fn main() -> Result<ExitCode> {
         });
     });
 
-    // At the end of your main function, replace:
-    // Ok(application.run())
-    // with:
     Ok(application.run_with_args::<String>(&[]))
 }
 
