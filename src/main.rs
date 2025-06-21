@@ -16,7 +16,7 @@ use std::path::{Path, PathBuf};
 const MOUSE_THRESHOLD: f64 = 10.0;
 
 #[derive(Parser)]
-#[command(author, version, about = "Screensaver for wlroots based Wayland compositors", long_about = None)]
+#[command(author, version, about = "Screensaver for wlroots-based Wayland compositors", long_about = None)]
 struct Args {
     #[arg(help = "URL or local HTML file path to display")]
     html: String,
