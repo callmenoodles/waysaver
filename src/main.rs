@@ -244,7 +244,6 @@ fn main() -> Result<ExitCode> {
                 let state: MutexGuard<InputState> = input_state_timer.lock().unwrap();
                 if state.should_close() {
                     drop(state);
-                    println!("Closing screensaver...");
                     close(&windows_timer, &app_timer);
                     return gdk4_wayland::glib::ControlFlow::Break;
                 }
